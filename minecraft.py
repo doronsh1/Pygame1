@@ -58,7 +58,8 @@ def input(key):
     if key == "right mouse down" and mouse.hovered_entity:
         if mouse.hovered_entity.block_type != "bedrock":
             destroy(mouse.hovered_entity)
-       
+    if key == "q":        
+        player.y += 1
 
 app.run()
 
